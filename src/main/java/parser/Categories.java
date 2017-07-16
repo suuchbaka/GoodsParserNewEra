@@ -7,7 +7,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 
 class Categories {
     // Класс, парсит категории
@@ -24,7 +23,7 @@ class Categories {
 
         Elements catalogueTable = doc.select("table[cellspacing=10]");
 
-        
+
 
         return catalogueTable.select("a[href]");
     }
