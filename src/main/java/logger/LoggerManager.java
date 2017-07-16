@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 public class LoggerManager {
     private static Logger logger;
 
-    public static Logger getLogger(String name) {
-        return logger = LogManager.getLogger(name);
+    public static Logger getLogger(Class<?> clazz) {
+        return logger = LogManager.getLogger(clazz);
     }
 }

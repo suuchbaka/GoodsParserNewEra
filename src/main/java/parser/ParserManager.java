@@ -1,6 +1,7 @@
 package parser;
 
 import org.jsoup.select.Elements;
+import variables.ParserVariables;
 
 import java.io.IOException;
 
@@ -15,7 +16,6 @@ public class ParserManager {
 
     public ParserManager() throws IOException {
         // URL каталога
-        String url = "http://www.goodsmatrix.ru/GMMap.aspx";
-        links = Categories.parseCategoriesLinks(url);
+        links = CategoriesParser.parseCategoriesLinks(ParserVariables.URL);
     }
 }
